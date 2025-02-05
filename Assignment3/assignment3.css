@@ -1,0 +1,38 @@
+/* Style for headers */
+h1, h2 {
+    color: blue;
+    background-color: lightgray;
+}
+
+/* Style for paragraphs */
+p {
+    color: black;
+}
+
+/* Style for links */
+a {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.main-footer {
+    background-color: lightgray;
+}
+
+.program-overview {
+    background-color: #35b5d4;
+}
+#break{
+    color: purple;
+}
