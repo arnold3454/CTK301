@@ -1,0 +1,43 @@
+a {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#whiteFont {
+    color: white;
+}
+
+.periwinkle {
+    background-color: rgb(130, 149, 232);
+}
+
+#darkBlue {
+    color:blue;
+}
+
+#orange {
+    color: orange;
+}
+
+.yellowBG {
+    background-color: yellow;
+}
+
+.red {
+    color: red;
+}
+
+#lightGreenBG {
+    background-color: lightgreen;
+}
+
+#fatherDay {
+    color: yellow;
+    background-color: darkgreen;
+}
+
