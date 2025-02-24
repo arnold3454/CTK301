@@ -1,0 +1,58 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+
+header {
+  background-color: yellow;
+  grid-column: span 12;
+}
+
+nav {
+  grid-column: span 3;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+
+}
+
+nav li a {
+  display: block;
+  background-color: red;
+  border: 1px solid black;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  grid-column: span 6;
+}
+
+main img {
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+aside {
+  grid-column: span 3;
+  background-color: blue;
+  color: white;
+  padding: 0 24px 24px 24px;
+}
+
+footer {
+  background-color: green;
+  color: white;
+  grid-column: span 12;
+  padding-left: 24px;
+}
