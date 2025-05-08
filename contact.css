@@ -1,0 +1,71 @@
+/* Global Centering */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #223240;
+    color: #FDFFF9;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2 {
+    color: #FDFFF9;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 28px;
+}
+p{
+    color: #FDFFF9;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Contact Container */
+.contact-container {
+    width: 100%;
+    text-align: center;
+}
+
+/* Header */
+.header-container {
+    width: 100vw; /* Ensures full-page width */
+    padding: 24px;
+    background-color: #1A2833; /* Makes it distinct */
+    text-align: center;
+    position: relative; /* Sticks to the top */
+    z-index: 1000; /* Keeps it above other elements */
+}
+
+
+/* Contact Buttons */
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 15px;
+    align-items: center; /* Ensures buttons themselves are centered */
+    justify-content: center; /* Centers the buttons vertically */
+    margin: 32px auto; /* Centers the container */
+}
+
+.contact-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #4d79ff, #ff4d4d);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.contact-button:hover {
+    transform: scale(1.05);
+}

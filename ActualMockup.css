@@ -1,0 +1,161 @@
+/* Global Styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #223240;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Grid Wrapper */
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  grid-row: span 3;
+}
+
+/* Header */
+h1 {
+  color: #FDFFF9;
+  font-size: 2rem;
+  padding: 24px;
+  text-align: center;
+  font-family: "proxima-nova", sans-serif;
+}
+.top-container {
+  width: 100vw; /* Full viewport width */
+  padding: 24px;
+  background-color: #1A2833; /* Keeps the section distinct */
+  text-align: center;
+  position: fixed; /* Keeps it at the top */
+  top: 0; /* Locks it to the top */
+  left: 0;
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+/* Carousel Container */
+.carousel {
+  position: relative;
+  width: 1000px; /* Adjusted width for better visibility */
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  width: 410px; /* Typical poker card width */
+  height: 575px; /* Typical poker card height */
+  background: #ddd;
+  border-radius: 12px; /* Rounded corners like real playing cards */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  transition: transform 0.5s ease-in-out, opacity 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card span {
+  position: absolute;
+  left: 70px; /* Aligns text to the left */
+  top: 75%; /* Centers vertically */
+  transform: rotate(-90deg) translate(-50%, -50%); /* Rotates and keeps it centered */
+  transform-origin: left center; /* Ensures proper rotation */
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a slight background for readability */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* Ensure uniform positioning */
+.front {
+  z-index: 3;
+  transform: scale(1.1);
+}
+
+.left {
+  z-index: 2;
+  transform: translateX(-120px) rotateY(-10deg);
+  opacity: 0.8;
+}
+
+.right {
+  z-index: 2;
+  transform: translateX(120px) rotateY(10deg);
+  opacity: 0.8;
+}
+/* .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom left, rgb(144, 194, 201, .35) 50%, rgb(32, 40, 43, .35) 50%);
+  pointer-events: none;
+  transition: background-color 0.5s ease;
+  mix-blend-mode: multiply; 
+  border-radius: 12px;
+}
+.image-overlay-container:hover .overlay {
+  background: linear-gradient(to bottom left, rgb(32, 40, 43, .35) 50%, rgb(144, 194, 201, .35) 50%);
+} */
+
+
+/* Ensure images scale correctly */
+.image-overlay-container img {
+  width: 110%;
+  height: 110%;
+  display: cover;
+}
+
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 12px;
+}
+
+.carousel-prev { 
+  left: 20px; 
+}
+.carousel-next { 
+  right: 20px; 
+}
+
+/* Footer */
+/* Footer */
+footer {
+  text-align: center;
+  padding: 16px;
+  background-color: #1A2833;
+  color: #FDFFF9;
+  width: 100%;
+}
+
+/* Footer Links */
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
